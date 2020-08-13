@@ -1,0 +1,15 @@
+output "security_group" {
+  value = aws_security_group.default.id
+}
+
+output "launch_template" {
+  value = aws_launch_template.web_template.id
+}
+
+output "asg_name" {
+  value = aws_autoscaling_group.web-asg.id
+}
+
+output "elb_name" {
+  value = aws_elb.web-elb.dns_name
+}
